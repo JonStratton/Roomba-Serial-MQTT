@@ -21,6 +21,7 @@ def roomba_do( command_list ):
       ser = serial.Serial( serial_dev, 115200 )
       for num in command_list:
          ser.write(chr(num))
+         time.sleep(.25)
       ser.close()
       success = True
    except:
