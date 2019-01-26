@@ -1,0 +1,13 @@
+[Unit]
+Description=Roomba Serial MQTT Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root
+ExecStart=/root/Roomba-Serial-MQTT/RoombaSerialMQTT.py -c /etc/RoombaSerialMQTT_config.json
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

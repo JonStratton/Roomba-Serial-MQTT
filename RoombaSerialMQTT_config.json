@@ -1,0 +1,10 @@
+{
+    "broker_address": "lab.local",
+    "serial_dev":      "/dev/ttyUSB0",
+    "roomba_commands": {
+        "turn_on":     [ 128, 131, 135 ],
+        "clean_spot":  [ 128, 131, 134 ],
+        "return_home": [ 128, 131, 143 ],
+        "turn_off":    [ 128, 131, 133 ]
+    }
+}
